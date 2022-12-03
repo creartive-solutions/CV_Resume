@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.page-wrapper {
+    margin:3rem auto;
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+}
+
+.left-section{
+width: 30%;
+    background-color: #025373;
+    color: #80A7BF;
+
+}
+.right-section {
+    background-color: #80A7BF;
+    width: 70%;
+    color: #025373;
+}
+
+.profile {
+    border-bottom: 2px solid black;
+    width: 90%;
+}
+
+.profile, .contact, .skills {
+    margin: 5%;
+}
+.profile__image {
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 95%;
+}
+.profile__name {
+    margin:auto;
+    padding: 1rem 0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile__job-name {
+    margin:auto;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact__title, .skills__title {
+display: flex;
+    color: #A0A7AF;
+    margin: 1rem 0;
+    padding-top: 2rem;
+    align-items: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.left-section li{
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.left-section a {
+    text-transform: none;
+    font-size: 1.8rem;
+    color: #80A7BF;
+    text-decoration: none;
+}
+
+.left-section a:hover {
+    color: lightskyblue;
+}
+
+.left-section i {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+}
