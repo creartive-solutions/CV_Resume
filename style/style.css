@@ -28,6 +28,7 @@ width: 30%;
     background-color: #80A7BF;
     width: 70%;
     color: #025373;
+    padding: 2rem;
 }
 
 .profile {
@@ -75,6 +76,10 @@ display: flex;
     font-weight: bold;
 }
 
+.skills__list li:hover {
+    font-weight: bold;
+}
+
 .left-section li{
     padding: .5rem 0;
     display: flex;
@@ -97,4 +102,71 @@ display: flex;
 .left-section i {
     font-size: 1.8rem;
     margin-right: 1.5rem;
+}
+
+.experience__title, .education__title {
+    color: #34495E;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.experience__job, .education_section {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.education__univ__left-side,  .experience__job__left-side  {
+    width: 55%;
+}
+.education__univ__right-side,.experience__job__right-side {
+    width: 45%;
+}
+
+.education__univ__name, .experience__job__name{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #21638f;
+    padding-bottom: 1rem;
+}
+
+
+.education__univ__title, .experience__job__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2E86C1;
+    padding-bottom: 1rem;
+}
+
+.experience__job__years,.education__univ__years {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+
+}
+
+.experience__job__description, .education__univ__description {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    border-left: 3px solid saddlebrown;
+    padding-left: .5rem;
+
+}
+
+.strong {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
