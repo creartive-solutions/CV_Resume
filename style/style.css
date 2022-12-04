@@ -153,15 +153,14 @@ display: flex;
     font-size: 1.8rem;
     letter-spacing: 1px;
     line-height: 2rem;
+    border-bottom: saddlebrown 1px dot-dash;
 
 }
 
 .experience__job__description, .education__univ__description {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    line-height: 2rem;
     border-left: 3px solid saddlebrown;
     padding-left: .5rem;
+
 
 }
 
@@ -169,4 +168,35 @@ display: flex;
     font-size: 1.6rem;
     font-weight: bold;
     padding-bottom: 1rem;
+}
+
+.right-section li {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.right-section i {
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.right-section li:hover > i {
+    color: lightblue;
+}
+
+.social a {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #025373;
+}
+.social {
+    border-left: 3px solid saddlebrown;
+    margin-top: 2rem;
+    padding-left: .5rem;
+}
+
+.social i {
+    padding-right: 0.5rem;
 }
