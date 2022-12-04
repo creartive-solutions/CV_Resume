@@ -180,7 +180,9 @@ display: flex;
     vertical-align: middle;
     font-size: 1rem;
     line-height: 2rem;
+    padding-right: 0.5rem;
 }
+
 .right-section li:hover > i {
     color: lightblue;
 }
