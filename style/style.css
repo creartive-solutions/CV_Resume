@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #F2F2F2;
+    background-color: #C1C1C1;
 }
 
 .page-wrapper {
@@ -16,13 +16,13 @@ body {
     min-height: 100vh;
     width: 80%;
     display: flex;
+    flex-direction: row;
 }
 
 .left-section{
-width: 30%;
+    width: 30%;
     background-color: #025373;
     color: #80A7BF;
-
 }
 .right-section {
     background-color: #80A7BF;
@@ -41,7 +41,7 @@ width: 30%;
 }
 .profile__image {
     margin: auto;
-    border: 5px solid black;
+    border: 6px solid #191919;
     border-radius: 50%;
     width: 95%;
 }
@@ -53,6 +53,7 @@ width: 30%;
     letter-spacing: 3px;
     text-align: center;
     font-weight: bold;
+    color: #B0B9BF;
 }
 
 .profile__job-name {
@@ -96,17 +97,19 @@ display: flex;
 }
 
 .left-section a:hover {
-    color: lightskyblue;
+    color: #B0B7BF;
 }
 
 .left-section i {
     font-size: 1.8rem;
     margin-right: 1.5rem;
+    color: #83b6dc;
+
 }
 
 .experience__title, .education__title {
     color: #34495E;
-    font-size: 4rem;
+    font-size: 4.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
@@ -131,7 +134,7 @@ display: flex;
 }
 
 .education__univ__name, .experience__job__name{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -141,16 +144,16 @@ display: flex;
 
 
 .education__univ__title, .experience__job__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #2E86C1;
+    color: #03738C;
     padding-bottom: 1rem;
 }
 
 .experience__job__years,.education__univ__years {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     letter-spacing: 1px;
     line-height: 2rem;
     border-bottom: saddlebrown 1px dot-dash;
@@ -160,18 +163,16 @@ display: flex;
 .experience__job__description, .education__univ__description {
     border-left: 3px solid saddlebrown;
     padding-left: .5rem;
-
-
 }
 
 .strong {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
     padding-bottom: 1rem;
 }
 
 .right-section li {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
     line-height: 2rem;
 }
@@ -184,12 +185,11 @@ display: flex;
 }
 
 .right-section li:hover > i {
-    color: lightblue;
+    color: #03738C;
 }
 
-
 .social a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2rem;
     text-decoration: none;
     color: #025373;
@@ -203,3 +203,98 @@ display: flex;
 .social i {
     padding-right: 0.5rem;
 }
+
+@media  (max-width:1263px) {
+    .contact__list a {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media  (max-width:1100px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+    .left-section {
+        width: 100%;
+    }
+    .right-section {
+        width: 100%;
+    }
+    .experience__job, .education_section {
+        flex-direction: row;
+    }
+    .experience__job__left-side, .experience__job__right-side, .education__univ__left-side, .education__univ__right-side {
+        width: 100%;
+    }
+    .contact__list li {
+        font-size: 1rem;
+    }
+}
+
+@media  (max-width:780px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+    .left-section {
+        width: 100%;
+    }
+    .right-section {
+        width: 100%;
+    }
+    .experience__job, .education_section {
+        flex-direction: column;
+    }
+    .experience__job__left-side, .experience__job__right-side, .education__univ__left-side, .education__univ__right-side {
+        width: 100%;
+    }
+    .skills__list li {
+        font-size:1.8rem ;
+    }
+    .contact__list a {
+        font-size: 1.4rem;
+    }
+    .contact__list li {
+        font-size: 1.6rem;
+    }
+}
+
+@media  (max-width:390px) {
+    .contact__list a {
+        font-size: 1.4rem;
+    }
+    .contact__list li {
+        font-size: 1.2rem;
+    }
+    .skills__list li {
+        font-size:1.4rem ;
+    }
+    .experience__title, .education__title {
+        font-size: 3.5rem;
+    }
+
+    .experience__job__name,.education__univ__name {
+        font-size: 2.5rem;
+    }
+    .experience__job__title, .education__univ__title {
+        font-size: 2.3rem;
+    }
+
+    .experience__job__years,.experience__job__description,.education__univ__years,.education__univ__description {
+        font-size: 1.5rem;
+    }
+    .social a {
+        font-size: 1.5rem;
+    }
+    .social {
+        margin: 0.1rem;
+    }
+.experience__job,.education_section {
+    flex-direction: column;
+}
+}
+
+@media  (max-width:350px) {
+    .contact__list a {
+        font-size: 1.2rem;
+    }
